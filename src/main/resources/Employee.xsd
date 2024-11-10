@@ -1,0 +1,35 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://example.com/soap"
+           xmlns="http://example.com/soap" elementFormDefault="qualified">
+    <xs:element name="EmployeeRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="id" type="xs:long"/>
+                <xs:element name="name" type="xs:string"/>
+                <xs:element name="lastname" type="xs:string"/>
+                <xs:element name="docType" type="xs:string"/>
+                <xs:element name="docNumber" type="xs:string"/>
+                <xs:element name="birthDate" type="xs:date"/>
+                <xs:element name="entranceDate" type="xs:date"/>
+                <xs:element name="role" type="xs:string"/>
+                <xs:element name="salary" type="xs:double"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="EmployeeResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="id" type="xs:long"/>
+                <xs:element name="name" type="xs:string"/>
+                <xs:element name="lastname" type="xs:string"/>
+                <xs:element name="docType" type="xs:string"/>
+                <xs:element name="docNumber" type="xs:string"/>
+                <xs:element name="birthDate" type="xs:date"/>
+                <xs:element name="entranceDate" type="xs:date"/>
+                <xs:element name="role" type="xs:string"/>
+                <xs:element name="salary" type="xs:double"/>
+                <xs:element name="entrance" type="xs:string"/>
+                <xs:element name="age" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
